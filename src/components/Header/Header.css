@@ -1,0 +1,134 @@
+.app{
+    min-height: 100vh;
+    background-image: url("https://images.pexels.com/photos/209831/pexels-photo-209831.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-clip: initial;
+    background-attachment:initial;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+
+}
+
+.baslik{
+    position: absolute;
+    top: 0;
+    font-size: 40px;
+    letter-spacing: 10px;
+    font-weight: bolder;
+    color: rgb(25, 83, 241);
+    text-shadow: 3px 7px 6px rgba(0,0,0,1);
+}
+
+.header{
+    background-image: url("https://images.pexels.com/photos/10054053/pexels-photo-10054053.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-clip: initial;
+    background-attachment:initial;
+    min-height: 82vh;
+    margin: 0 100px;
+    display: flex;
+    flex: 6;
+    flex-wrap: wrap;
+    color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.form-field{
+    flex: 2;
+    display: flex;
+    padding-top: 10px;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+    border-radius: 20px;
+
+        background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.6); /* Black w/opacity/see-through */
+
+}
+
+.form{
+    display: flex;
+    margin-left: 60px;
+    margin-top: 100px;
+    
+}
+
+.name{
+    position: absolute;
+    right: 180px;
+    color: white;
+    text-align: right;
+    font-size: 30px;
+    font-family: 'Jazz LET, fantasy';
+    font-weight: bolder;
+    text-shadow: 3px 7px 6px rgba(0,0,0,1);
+
+}
+.input{
+    height: 35px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    background-color: rgb(11, 13, 102);
+    color: white;
+}
+
+.label{
+    position: absolute;
+    left: 100px;
+    transform: translate(-20px, 8px);
+    transition: 0.7s;
+    background-color: rgb(11, 13, 102);
+    color: white;
+    letter-spacing: 2px;
+}
+
+
+.input:focus + .label,
+.input:valid + .label{
+    transform: translate(-35px, -10px);
+    transition: 0.7s;
+    background-color: rgb(11, 13, 102, 0.4);
+}
+
+.input:focus, .input:valid{
+    outline: blue;
+    border-color: blue;
+    background-color: rgb(11, 13, 102, 0.4);
+
+}
+
+.submit{
+    background-color: rgb(4, 99, 161);
+    padding: 6px 15px;
+    border: 1px solid blue;
+    margin-left: 10px;
+    color: white;
+    font-size: 15px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.submit:hover{
+    box-shadow: blue 120px 0px 0px 0px inset;
+    transition: 1.5s;
+}
+
+.infos{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 70px;
+    font-weight: bolder;
+    font-size: 18px;
+
+}
